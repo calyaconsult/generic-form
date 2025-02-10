@@ -16,3 +16,8 @@ curl -X POST 'https://reqbin.com/echo/post/json' -H 'Content-Type: application/j
     "message": "This is a test."
 }'
 ```
+As a minimum, your endpoint should be able to 
+1. **Receive the JSON data** sent in the request body.
+2. **Decode the JSON data** into an array or object.
+3. **Process the data** (e.g., validate, sanitize, or store it).
+4. **Send a response** back to the client (e.g., a success message or error details).
