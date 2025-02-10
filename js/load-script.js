@@ -65,7 +65,7 @@ async function run() {
 // Constands form old script
 const myFormAction = `mailform-${Math.random().toString(36).slice(-6)}.php`; // Decoy form action and unique ID
 const myFormNode = 'container1'; // Parent element of the form (must be in HTML)
-const myFormHandler = 'http://192.168.1.53:8088/webforms/mailform-tester-chatgpt.php';
+const myFormHandler = 'http://192.168.1.53:8088/webforms/mailform.php';
 const myFormCreator = 'js/general-form-create.js';
 
 // Set span contents
