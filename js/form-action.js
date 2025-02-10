@@ -1,4 +1,4 @@
-function handleForm(formAction) {
+function handleForm(formAction,formHandler) {
     const form = document.querySelector(`form[action="${formAction}"]`);
     if (!form) {
         console.error("Form element not found!");
@@ -10,7 +10,7 @@ function handleForm(formAction) {
         return;
     }
     const formDiv = document.getElementById('formdiv');
-    const MAILFORMHANDLER = 'http://192.168.1.53:8088/webforms/mailform.php'; // Replace with actual endpoint
+    const MAILFORMHANDLER = formHandler;
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
