@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Code D-c</title>
+    <link rel="stylesheet" href="css/general-form-code.css">
+    <script src="js/form-action.js"></script>
+    <style>
+       #p1, #p2, #p3 {margin: 1rem;}
+       #sp1 {font-size: 150%;}
+       #container0 {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+       }
+       span.lnk {
+         display: block;
+       }
+    </style>
+</head>
+<body>
+    <div class="container" id="container0">
+      <h1>Generate and Handle Form</h1>
+      <p id="p1">Form action: <span id="sp1"></span></p>
+      <p id="p2">Form handler: <span id="sp2"></span></p>
+      <p id="p3">Script loader: <span id="sp3"><a href="js/load-script.js">js/load-script.js</a> (async)</span> <span id="sp3"><a href="js/load-script-old.js">js/load-script-old.js</a> (sync)</span><br>
+      Check console for script loader success!</p>
+    </div>
+    <div class="container" id="container1"></div>
+    <script src="js/load-script.js"></script>
+</body>
+</html>
